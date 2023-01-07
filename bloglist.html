@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>List of blogs | KTBlog</title>
+        <meta charset="utf-8">
+        <meta name="description" content="List of the blogs created by KTBlog">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ff4dde0530.js" crossorigin="anonymous"></script>
+        <link href="styles/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><div class="logo"><img src="images/coffee-logo.png" class="logo-img" alt="coffe cup with the body as curlybraces icon"></img>KTBLOG.</div></a>
+            <nav class="pc-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li id="current"><a href="bloglist.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <button id="hamburger-button">&#9776;</button>
+                </ul>
+            </nav>
+            <nav class="hamburger-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li id="hamburger-current"><a href="bloglist.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Blog posts<span>.</span></h1>
+            <p class="intro-blog-posts">The latest news, updates and stories for developers.</p>
+            <div class="loadingContainer">
+                <div class="loadingIndicator"></div>
+                <p>Loading</p>
+            </div>
+            <div class="blogList"></div>
+                <button class="view-more-btn">View More</button>
+                <button class="scrl-top-btn">Back to start</button>
+        </main>
+        <footer>
+            <div class="footer-layout">
+                <div class="footer-left">
+                    <p><strong>Navigation:</strong></p>
+                    <a href="index.html">Home</a>
+                    <a href="bloglist.html">Blogs</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="footer-middle">
+                    <p><strong>Follow us on social media:</strong></p>
+                    <div><i class="fab fa-instagram-square"></i>Instagram</div>
+                    <div><i class="fab fa-facebook-square"></i>Facebook</div>
+                    <div><i class="fab fa-snapchat-square"></i>Snapchat</div>
+                </div>
+                <div class="footer-right">
+                    <p><strong>Subscribe to our newsletter</strong></p>
+                    <button class="cta-subscribe">Subscribe</button><input type="text" class="subscribe-input" placeholder="Email:" id="subEmail">
+                    <div class="subMessage">Thank you for subscribing to our newsletter.</div>
+                    <div class="subErrorMessage">Please enter a valid email address.</div>
+                </div>
+            </div>
+            <div class="footer-end">&#169 2021 KTBLOG.</div>
+        </footer>
+        <script src="js/components/hamburger.js"></script>
+        <script src="js/components/subscribe.js"></script>
+        <script src="js/bloglist.js"></script>
+    </body>    
+</html>

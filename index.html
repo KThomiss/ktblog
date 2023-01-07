@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Homepage for KTBlog</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Homepage for KTBlog">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ff4dde0530.js" crossorigin="anonymous"></script>
+        <link href="styles/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><div class="logo"><img src="images/coffee-logo.png" class="logo-img" alt="coffe cup with the body as curlybraces icon"></img>KTBLOG.</div></a>
+            <nav class="pc-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bloglist.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <button id="hamburger-button">&#9776;</button>
+                </ul>
+            </nav>
+            <nav class="hamburger-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bloglist.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="hp-img">
+                <h1 id="welcome">Welcome to KTBlog<span>.</span></h1>
+                <p class="welcome-text">Grab a code of coffee and enjoy!</p>
+                <a href="bloglist.html" class="cta-link" id="welcome-link">Browse</a>
+            </div>
+            <section class="card-section">
+                <div class="card">
+                    <h2 class="card-header">Tell us your story!</h2>
+                    <p class="card-txt">We would love to hear about how you got on to the developer path. If you would like to share your story, click the button below to get in touch.</p>
+                    <a href="contact.html" class="cta-link">Story time!</a>
+                </div>
+            </section>
+            <h3 class="latest-posts">Latest Posts</h3>
+                <div class="carousel">
+                    <div class="loadingContainer">
+                        <div class="loadingIndicator"></div>
+                        <p>Loading</p>
+                    </div>
+                </div>
+                <div class="buttons-position">
+                    <button class="carousel-buttons" id="previous" aria-label="move carousel to the left">&#8592</button>
+                    <button class="carousel-buttons" id="next" aria-label="move carousel to the right">&#8594</button>
+                </div>
+            <h3 class="grid-title">What do we write about?</h3>
+            <div class="grid-container">
+                <div class="grid-child_1">
+                    <div class="img-overlay">KTBlog.</div>
+                </div>
+                <div class="grid-child_2">
+                    <div class="img-overlay">Tips & tricks to make your days easier and more fun!</div>
+                </div>
+                <div class="grid-child_3">
+                    <div class="img-overlay">Step by step guides to help the fellow developer</div>
+                </div>
+                <div class="grid-child_4">
+                    <div class="img-overlay">HTML, CSS and JavaScript</div>
+                </div>
+                <div class="grid-child_5">
+                    <div class="img-overlay">Web Design for a developers point of view</div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-layout">
+                <div class="footer-left">
+                    <p><strong>Navigation:</strong></p>
+                    <a href="index.html">Home</a>
+                    <a href="bloglist.html">Blogs</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="footer-middle">
+                    <p><strong>Follow us on social media:</strong></p>
+                    <div><i class="fab fa-instagram-square"></i>Instagram</div>
+                    <div><i class="fab fa-facebook-square"></i>Facebook</div>
+                    <div><i class="fab fa-snapchat-square"></i>Snapchat</div>
+                </div>
+                <div class="footer-right">
+                    <p><strong>Subscribe to our newsletter</strong></p>
+                    <button class="cta-subscribe">Subscribe</button><input type="text" class="subscribe-input" placeholder="Email:" id="subEmail">
+                    <div class="subMessage">Thank you for subscribing to our newsletter.</div>
+                    <div class="subErrorMessage">Please enter a valid email address.</div>
+                </div>
+            </div>
+            <div class="footer-end">&#169 2021 KTBLOG.</div>
+        </footer>
+        <script src="js/components/hamburger.js"></script>
+        <script src="js/components/subscribe.js"></script>
+        <script src="js/script.js"></script>
+    </body>    
+</html>

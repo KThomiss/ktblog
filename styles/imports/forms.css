@@ -1,0 +1,42 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--lighterGrayColor);
+  border: 2px solid var(--grayColor);
+}
+
+label {
+  display: block;
+}
+
+.form-input,
+textarea {
+  margin: 10px;
+  min-width: 500px;
+  min-height: 30px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--primaryColor);
+  border: none;
+}
+
+textarea {
+  height: 200px;
+}
+
+.submit {
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primaryColor);
+  width: 150px;
+  height: 50px;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  cursor: pointer;
+}

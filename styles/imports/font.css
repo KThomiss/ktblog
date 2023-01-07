@@ -1,0 +1,32 @@
+body,
+option,
+footer a {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
+  color: var(--secondaryColor);
+  text-align: center;
+}
+
+h1 {
+  font-size: 4.5rem;
+  padding-top: 20px;
+}
+
+h2,
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 5rem;
+}
